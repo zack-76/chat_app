@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="560.0" prefWidth="330.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Server.ServerController">
+   <children>
+      <Label layoutX="27.0" layoutY="14.0" text="Server" textFill="#f8f8f8">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="31.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_launch" layoutX="28.0" layoutY="86.0" mnemonicParsing="false" text="Launch">
+         <font>
+            <Font name="Arial Bold Italic" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_close" layoutX="187.0" layoutY="86.0" mnemonicParsing="false" style="-fx-opacity: 0.3;" text="Shut Down">
+         <font>
+            <Font name="Arial Bold Italic" size="20.0" />
+         </font>
+      </Button>
+      <Label layoutX="12.0" layoutY="142.0" text="Connected :" textFill="#4d4a4a">
+         <font>
+            <Font name="Arial Bold" size="21.0" />
+         </font>
+      </Label>
+      <ScrollPane fx:id="sp_client" layoutX="4.0" layoutY="173.0" prefHeight="383.0" prefWidth="323.0">
+         <content>
+            <VBox fx:id="vb_client" alignment="CENTER" prefHeight="367.0" prefWidth="322.0" style="-fx-background-color: #263238;" />
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
